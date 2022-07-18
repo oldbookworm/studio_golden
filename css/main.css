@@ -1,0 +1,60 @@
+/* ОБЩИЕ СТИЛИ */
+
+body {
+ margin: 0;
+ padding: 0;
+ min-width: 1200px; 
+ 
+ font-family: ;
+ font-size: px;
+ line-height: px;
+ font-weight: ;
+ color: #;
+ 
+ background-color: #;
+}
+
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+} 
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+img {
+   max-width: 100%;
+   height: auto; 
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+input {
+   font: inherit;
+   margin: 0;
+   padding: 0;
+   border: none;
+}
+
+
+/*блок-центровщик*/
+
+.container {
+   width: px;
+   margin: 0 auto; 
+}
+
+
