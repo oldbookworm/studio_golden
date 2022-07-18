@@ -1,19 +1,7 @@
 @font-face {
-font-family: ;
-src: url("");
-src: url("");
+font-family: "DroidSerif Italic";
+src: url("../fonts/droidserif/droidserifitalic.ttf");
+src: url("../fonts/droidserif/droidserifitalic.woff");
 }
 
 
-@font-face {
-font-family: ;
-src: url("");
-src: url("");
-}
-
-
-@font-face {
-font-family: ;
-src: url("");
-src: url("");
-}
