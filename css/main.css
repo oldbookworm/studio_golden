@@ -3,7 +3,6 @@
 body {
  margin: 0;
  padding: 0;
- min-width: 1200px; 
  
  font-family: 'Roboto Slab', serif;
  font-size: 14px;
@@ -53,8 +52,213 @@ input {
 /*блок-центровщик*/
 
 .container {
-   width: 67%;
+   width: 66%;
    margin: 0 auto; 
 }
 
+@media only screen and (max-width : 1200px) {
+   .container {
+      width: 80%;
+   }
+}
+
+@media only screen and (max-width : 900px) {
+   .container {
+      width: 85%;
+   }
+}
+
+@media only screen and (max-width : 500px) {
+   .container {
+      width: 90%;
+   }
+}
+
+
+.flex-container {
+   display: flex;
+   justify-content: flex-start;
+}
+
+
+/* ========== HEADER =============*/
+
+
+.header {
+   width: 100%;
+   height: 700px;
+   background-image: url("../img/main-photo.png");
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+
+   border-top: 1px solid transparent;
+}
+
+
+/*логотип*/
+.header__logo {
+   display: block;
+   flex-shrink: 0;
+   margin-top: 45px;
+   width: 85px;
+   height: 35px;
+}
+
+
+
+/*ГЛАВНОЕ МЕНЮ*/
+
+.main-menu {
+   display: flex;
+   justify-content: flex-start;
+   position: relative;
+}
+
+/*местоположение меню*/
+.header__menu {
+   margin-left: auto;
+   margin-top: 53px; 
+}
+
+.main-menu__item:not(:first-child) {
+   margin-left: 40px;
+}
+
+/*оформление ссылок меню*/
+.main-menu__link {
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: 600;
+   transition-duration: 0.5s;
+   transition-property: color;
+}
+
+.main-menu__link:hover {
+   color: #fed136;
+}
+
+
+/*Мобильное меню*/
+
+/*кнопка-бургер*/
+.mobile-nav-btn {
+   width: 50px;
+   height: 25px;
+   font-size: 0;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   z-index: 2;
+}
+
+/*внешний вид кнопки-бургера*/
+.mobile-btn--closed .mobile-nav-btn::before {
+   content: "";
+   position: absolute;
+   top: 1px;
+   left: 0;
+   width: 45px;
+   height: 4px;
+   background-color: #ffffff;
+   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+   transition-duration: 0.5s;
+   transition-property: background-color, box-shadow;
+}
+
+.mobile-btn--closed:hover .mobile-nav-btn::before {
+   background-color: #fed136;
+   box-shadow: 0 10px 0 0 #fed136, 0 20px 0 0 #fed136;
+}
+
+.mobile-btn--closed:active .mobile-nav-btn::before {
+   background-color: rgba(182, 150, 42, .6);
+   box-shadow: 0 10px 0 0 rgba(182, 150, 42, .6),
+   0 20px 0 0 rgba(182, 150, 42, .6);
+}
+
+/*местоположение кноки-бургера*/
+.header__mobile-nav-btn {
+   position: absolute;
+   top: 45px;
+   right: 35px;
+   display: none;
+}
+
+/*кнопка меню в открытом виде-КРЕСТИК*/
+
+.mobile-btn--opened .mobile-nav-btn::before,
+.mobile-btn--opened .mobile-nav-btn::after {
+   content: "";
+   position: absolute;
+   top: 8px;
+   width: 25px;
+   height: 4px;
+   background-color: #ffffff;
+   transition-duration: 0.5s;
+   transition-property: background-color, box-shadow;
+}
+
+.mobile-btn--opened:hover .mobile-nav-btn::before,
+.mobile-btn--opened:hover .mobile-nav-btn::after {
+   background-color: #fed136;
+}
+
+.mobile-btn--opened:active .mobile-nav-btn::before,
+.mobile-btn--opened:active .mobile-nav-btn::after {
+   background-color: rgba(182, 150, 42, .6);
+}
+
+.mobile-btn--opened .mobile-nav-btn::before {
+   transform: rotate(45deg);
+   box-shadow: none;
+}
+
+.mobile-btn--opened .mobile-nav-btn::after {
+   transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+/*адаптив для хедера*/
+@media only screen and (max-width : 900px) {
+   .main-menu__link {
+      font-size: 13px;
+   }
+
+   .header__menu {
+      margin-top: 50px;
+   }
+}
+
+@media only screen and (max-width : 768px) {
+   .main-menu {
+      display: none;
+   }
+
+   .header__mobile-nav-btn {
+      display: block;
+   }
+
+   
+}
+
+@media only screen and (max-width : 500px) {
+   .header__logo {
+      margin-top: 20px;
+   }
+
+   .header__mobile-nav-btn {
+      top: 23px;
+      right: 25px; 
+   }
+
+}
 

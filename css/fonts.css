@@ -1,7 +1,23 @@
+/*@font-face {
+font-family: Montserrat;
+src: url("../fonts/montserrat/montserrat.ttf");
+src: url("../fonts/montserrat/montserrat.woff");
+}
+
+@font-face {
+font-family: "Montserrat Bold";
+src: url("../fonts/montserrat/montserratbold.ttf");
+src: url("../fonts/montserrat/montserratbold.woff");
+}*/
+
 @font-face {
 font-family: "DroidSerif Italic";
 src: url("../fonts/droidserif/droidserifitalic.ttf");
 src: url("../fonts/droidserif/droidserifitalic.woff");
 }
 
-
+/*@font-face {
+font-family: "RobotoSlab Regular";
+src: url("../fonts/robotoslab/robotoslabregular.ttf");
+src: url("../fonts/robotoslab/robotoslabregular.woff");
+}*/
