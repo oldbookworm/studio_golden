@@ -34,3 +34,14 @@ jQuery(document).ready(function(){
         })
     });
   });
+
+// Открытие и закрытие мобильного меню
+jQuery(document).ready(function(){
+
+    $(function() {
+    $(".mobile-nav-btn").click(function() {
+    $(".mobile-menu").toggleClass("js-show-mobile");
+    $(".main-nav").toggleClass("js-mobile-menu-styles");
+        })
+    });
+  });

@@ -100,6 +100,7 @@ input {
    display: block;
    flex-shrink: 0;
    margin-top: 45px;
+   margin-bottom: 20px;
    width: 85px;
    height: 35px;
 }
@@ -114,10 +115,14 @@ input {
    position: relative;
 }
 
+.main-nav {
+   flex-wrap: wrap;
+}
+
 /*местоположение меню*/
 .header__menu {
    margin-left: auto;
-   margin-top: 53px; 
+   margin-top: 50px; 
 }
 
 .main-menu__item:not(:first-child) {
@@ -125,7 +130,8 @@ input {
 }
 
 /*оформление ссылок меню*/
-.main-menu__link {
+.main-menu__link,
+.mobile-menu__link {
    font-family: 'Montserrat', sans-serif;
    text-transform: uppercase;
    color: #ffffff;
@@ -134,12 +140,12 @@ input {
    transition-property: color;
 }
 
-.main-menu__link:hover {
+.main-menu__link:hover,
+.mobile-menu__link:hover {
    color: #fed136;
 }
 
 
-/*Мобильное меню*/
 
 /*кнопка-бургер*/
 .mobile-nav-btn {
@@ -220,14 +226,90 @@ input {
 }
 
 
+/*Мобильное меню*/
+
+.header__mobile-menu {
+   width: 100%;
+}
+
+.mobile-menu {
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   background-color: #373737;
+   display: none;
+}
+
+.mobile-menu__item {
+   width: 100%;
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #000000;
+   border-top: 1px solid #485461;
+}
+
+.mobile-menu__link {
+   display: block;
+}
 
 
+/*Заголовки*/
+
+.main-title {
+   font-family: "DroidSerif Italic";
+   font-size: 40px;
+   font-weight: normal;
+   color: #ffffff;
+   text-align: center;
+}
+
+.header__main-title {
+   margin-top: 13.5%;
+}
+
+.main-subtitle {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 75px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #ffffff;
+   text-align: center;
+}
 
 
+/*JS-классы для Хедера*/
+/*для работы должны стоять ДО медазапросов*/
+
+.js-show-mobile {
+   display: block;
+}
+
+.js-mobile-menu-styles {
+   position: static;
+   background-color: #373737;
+   border-bottom: 1px solid #485461;   
+}
 
 
 
 /*адаптив для хедера*/
+
+@media only screen and (max-width : 1200px) {
+   .header__main-title {
+      margin-top: 11%;
+   }   
+
+}
+
+@media only screen and (max-width : 1000px) {
+   .header__main-title {
+      font-size: 30px;
+      margin-top: 9%;
+   }   
+
+}
+
 @media only screen and (max-width : 900px) {
    .main-menu__link {
       font-size: 13px;
@@ -236,6 +318,7 @@ input {
    .header__menu {
       margin-top: 50px;
    }
+
 }
 
 @media only screen and (max-width : 768px) {
@@ -246,7 +329,6 @@ input {
    .header__mobile-nav-btn {
       display: block;
    }
-
    
 }
 
@@ -261,4 +343,18 @@ input {
    }
 
 }
+
+@media only screen and (min-width : 768px) {
+   .mobile-menu {
+      display: none; 
+   }
+
+   .js-mobile-menu-styles {
+      background-color: transparent;
+      border-bottom: none;
+   }
+}
+
+
+
 

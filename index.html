@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 
 	<title>Дизайн студия Golden</title>
-
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -29,8 +29,11 @@
 <body>
 
 <header class="header resize_block">
-<nav class="main-nav mobile-btn--closed container flex-container">
+
+
+<nav class="main-nav mobile-btn--closed">
 	
+<div class="container flex-container">
 	<!-- логотип -->
 	<a class="logo header__logo">
 		<img class="logo__img" src="img/logo.png" width="85px" height="35px" alt="Логотип web-студии Golden">
@@ -52,8 +55,29 @@
 
 	<button class="mobile-nav-btn header__mobile-nav-btn" type="button">Открыть меню</button>
 
-</nav>	
+</div>
+
+	<!-- мобильное меню -->
+	<ul class="mobile-menu header__mobile-menu">
+
+		<li class="mobile-menu__item"><a class="mobile-menu__link" href="#home">Главная</a></li>
+
+		<li class="mobile-menu__item"><a class="mobile-menu__link" href="#services">Услуги</a></li>
+
+		<li class="mobile-menu__item"><a class="mobile-menu__link" href="#portfolio">Портфолио</a></li>
+
+		<li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">О нас</a></li>
+
+		<li class="mobile-menu__item"><a class="mobile-menu__link" href="#contact">Контакты</a></li>
+	</ul>
+</nav>
+
+<h1 class="main-title header__main-title">Welcome to Our Studio!</h1>
+<p class="main-subtitle header__main-subtitle">It's Nice To Meet You</p>
+
 </header>
+
+
 
 
 
