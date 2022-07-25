@@ -135,6 +135,7 @@ input {
 .section-subtitle {
    margin: 0;
    padding: 0;
+   margin-bottom: 77px;
 
    font-family: "DroidSerif Italic";
    font-size: 16px;
@@ -377,16 +378,72 @@ input {
 
 .services {
    border-top: 1px solid transparent;
-
-/*временные*/
-   box-sizing: border-box;
-   min-height: 568px;
 }
 
+/*список услуг*/
+.services__list {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
 
+.services__list-item {
+   position: relative;
+   width: 300px;
+   margin: 0 auto;
+   margin-bottom: 100px;
+   box-sizing: border-box;
+}
 
+/*иконки услуг*/
+.services__list-item::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 112px;
+   width: 75px;
+   height: 74px;
+   z-index: 10;
 
+   background-repeat: no-repeat;
+}
 
+.services__list-item1::before {
+   background-image: url("../img/bucket-icon.png");
+}
+
+.services__list-item2::before {
+   background-image: url("../img/responsive-icon.png");
+}
+
+.services__list-item3::before {
+   background-image: url("../img/security-logo.png");
+}
+
+/*заголовок услуг*/
+.services__item-title {
+   margin: 0;
+   padding: 0;
+   margin-top: 95px;
+   margin-bottom: 15px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   color: #222222;
+   text-align: center;
+}
+
+/*текст услуг*/
+
+.services__item-text {
+   padding: 0;
+   margin: 0;
+   margin-bottom: 15px;
+   padding-left: 5px;
+   padding-right: 5px;
+   text-align: center;
+}
 
 
 
