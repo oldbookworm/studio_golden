@@ -29,7 +29,17 @@
    .header__main-title {
       margin-top: 70px;
       font-size: 65px;
-   }  
+   }
+
+  /*заголовки секций*/
+   .section-title {
+      margin-top: 100px;
+   }
+
+   /*секция services*/
+   .services__list-item {
+      margin-bottom: 65px;
+   }
 }
 
 @media only screen and (max-width : 1000px) {
@@ -111,7 +121,21 @@
 
    .header__btn {
       margin-top: 30px;
-   }    
+   } 
+
+   /*заголовки секций*/
+   .section-title {
+      margin-top: 90px;
+   }
+
+   .section-subtitle {
+      margin-bottom: 75px;
+   }
+
+   /*секция services*/
+   .services__list-item {
+      margin-bottom: 40px;
+   }   
    
 }
 
@@ -152,7 +176,29 @@
 
    .header__btn {
       margin-top: 20px;
-   }  
+   }
+
+  /*заголовки секций*/
+   .section-title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-top: 50px;
+   }
+
+   .section-subtitle  {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 50px;
+   }
+
+   /*секция services*/
+   .services__item-title {
+      font-size: 16px;
+   }
+
+   .services__item-text {
+      margin-bottom: 10px;
+   }
 }
 
 @media only screen and (max-width : 500px) {
@@ -176,21 +222,6 @@
 
 }
 
-@media only screen and (max-width : 400px) {
-   /*Хедер*/
-   .header__main-title {
-      margin-top: 3px;
-      font-size: 20px;
-      line-height: 25px;
-   } 
-
-   .header__btn {
-      margin-top: 0px;
-   }  
-}
-
-
-
 @media only screen and (max-width : 450px) {
    /*кнопка*/
    .main-btn {
@@ -201,6 +232,24 @@
       padding-top: 9px;
    }
 }
+
+@media only screen and (max-width : 400px) {
+   /*Хедер*/
+   .header__main-title {
+      margin-top: 3px;
+      font-size: 20px;
+      line-height: 25px;
+   } 
+
+   .header__btn {
+      margin-top: 0px;
+   } 
+
+}
+
+
+
+
 
 
 
