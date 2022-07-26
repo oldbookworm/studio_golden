@@ -447,7 +447,58 @@ input {
 
 
 
+/* ========= SECTION ПОРТФОЛИО =========*/
 
 
+.portfolio {
+   border-top: 1px solid transparent;
+   background-color: #f7f7f7;
+
+   /*временно*/
+   min-height: 1218px;
+}
+
+/*портфолио список*/
+.portfolio__list {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.portfolio__list-item {
+   width: 290px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   box-sizing: border-box;
+}
+
+/*картинка портфолио*/
 
 
+/*заголовок портфолио*/
+.portfolio__item-title {
+   margin: 0;
+   padding: 0;
+   margin-top: 30px;
+   margin-bottom: 5px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   color: #333333;
+   text-align: center;
+}
+
+/*текст портфолио*/
+
+.portfolio__item-text {
+   padding: 0;
+   margin: 0;
+   margin-bottom: 25px;
+
+   font-family: "DroidSerif Italic";
+   font-size: 14px;
+   line-height: 20px;
+   color: #737373;
+   text-align: center;
+}
