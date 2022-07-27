@@ -454,8 +454,6 @@ input {
    border-top: 1px solid transparent;
    background-color: #f7f7f7;
 
-   /*временно*/
-   min-height: 1218px;
 }
 
 /*портфолио список*/
@@ -473,7 +471,14 @@ input {
 }
 
 /*картинка портфолио*/
+.portfolio__list-item:hover img {
+   filter: opacity(45%);
+   -webkit-filter: opacity(45%);
+   -moz-filter: opacity(45%);
 
+   transition-duration: 0.5s;
+   transition-property: filter;
+}
 
 /*заголовок портфолио*/
 .portfolio__item-title {
@@ -502,3 +507,4 @@ input {
    color: #737373;
    text-align: center;
 }
+
