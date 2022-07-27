@@ -508,3 +508,33 @@ input {
    text-align: center;
 }
 
+/* ========= SECTION О НАС =========*/
+
+.about-us {
+   position: relative;
+   border-top: 1px solid transparent;
+
+   /*временно*/
+   min-height: 1666px;
+}
+
+/*картинка*/
+.about-us__img--big {
+   position: absolute;
+   top: 270px;
+   left: calc(50% - 90px);
+}
+
+/*запись*/
+
+.journal__item p {
+   margin: 0;
+   padding: 0;
+
+   width: 325px;
+}
+
+.about-us__journal-item--left {
+   margin-right: auto;
+   text-align: right;
+}
