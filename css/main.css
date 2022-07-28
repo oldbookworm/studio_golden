@@ -52,7 +52,7 @@ input {
 /*блок-центровщик*/
 
 .container {
-   width: 66%;
+   width: 75%;
    margin: 0 auto; 
 }
 
@@ -518,23 +518,95 @@ input {
    min-height: 1666px;
 }
 
+.about-us__journal-item {
+   margin-bottom: 100px;
+}
+
 /*картинка*/
-.about-us__img--big {
+/*.about-us__img--big {
    position: absolute;
    top: 270px;
    left: calc(50% - 90px);
-}
+}*/
 
 /*запись*/
 
-.journal__item p {
-   margin: 0;
-   padding: 0;
-
+.journal__item {
    width: 325px;
 }
 
+/*для всех p в записи*/
+.about-us__text {
+   margin: 0;
+   padding: 0; 
+}
+
+/*расположение блоков текста на странице*/
 .about-us__journal-item--left {
    margin-right: auto;
    text-align: right;
+}
+
+.about-us__journal-item--right {
+   margin-left: auto;
+   text-align: left;
+}
+
+.journal__date {
+   margin-bottom: 7px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 700;
+   color: #222222;  
+}
+
+.journal__title {
+   margin-bottom: 15px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 700;
+   color: #222222;
+}
+
+.journal__text {
+   margin-bottom: 15px;
+}
+
+
+
+/*выравнивание картинок в блоке*/
+
+.journal__item::before {
+   content: "";
+   position: absolute;
+   left: calc(50% - 90px);
+   width: 183px;
+   height: 183px;
+   z-index: 10;
+
+   background-repeat: no-repeat;
+}
+
+.journal__item--1::before {
+   top: 272px;
+   background-image: url("../img/our-humble-beginnings.png");
+}
+
+.journal__item--2::before {
+   top: 564px;
+   background-image: url("../img/facing-startup-battles.png");
+}
+
+.journal__item--3::before {
+   top: 878px;
+   background-image: url("../img/enter-the-dark-days.png");
+}
+
+.journal__item--4::before {
+   top: 1147px;
+   background-image: url("../img/our-triumph.png");
 }
