@@ -40,6 +40,13 @@
    .services__list-item {
       margin-bottom: 65px;
    }
+
+   /*секция about us*/
+
+   .journal__img {
+      position: static;
+   }
+
 }
 
 @media only screen and (max-width : 1000px) {
@@ -166,6 +173,39 @@
       font-size: 25px;
       line-height: 35px;
    } 
+
+    /*секция about us*/
+   .journal__item {
+      flex-wrap: wrap;
+   }
+
+   .about-us__journal-item {
+      margin-bottom: 75px;
+   }
+
+   
+   .about-us__text-wrapper--left,
+   .about-us__text-wrapper--right {
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .about-us__text-wrapper--right {
+      order: 1;
+   }
+
+   .journal__img--order2 {
+      order: 2;
+   }
+
+   .about-us__text-wrapper {
+      width: 355px;
+      margin-bottom: 60px;
+   }
+
+   .journal__img {
+      margin: 0 auto;
+   }
 }
 
 @media only screen and (max-width : 550px) {

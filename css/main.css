@@ -518,40 +518,47 @@ input {
    min-height: 1666px;
 }
 
+/*запись*/
+
+.journal__item {
+   position: relative;
+   width: 100%;
+
+/*пробно*/
+   display: flex;
+   justify-content: flex-start;
+}
+
 .about-us__journal-item {
    margin-bottom: 100px;
 }
 
-/*картинка*/
-/*.about-us__img--big {
-   position: absolute;
-   top: 270px;
-   left: calc(50% - 90px);
-}*/
-
-/*запись*/
-
-.journal__item {
+.about-us__text-wrapper {
+   box-sizing: border-box;
    width: 325px;
 }
 
-/*для всех p в записи*/
-.about-us__text {
-   margin: 0;
-   padding: 0; 
-}
 
 /*расположение блоков текста на странице*/
-.about-us__journal-item--left {
+.about-us__text-wrapper--left {
    margin-right: auto;
    text-align: right;
 }
 
-.about-us__journal-item--right {
+.about-us__text-wrapper--right {
    margin-left: auto;
    text-align: left;
 }
 
+
+/*для всех p в записи*/
+.about-us__text {
+   margin: 0;
+   padding: 0;
+}
+
+
+/*Оформление текста*/
 .journal__date {
    margin-bottom: 7px;
 
@@ -576,37 +583,13 @@ input {
    margin-bottom: 15px;
 }
 
-
-
-/*выравнивание картинок в блоке*/
-
-.journal__item::before {
-   content: "";
+/*картинка*/
+.journal__img {
    position: absolute;
+   top: 0;
    left: calc(50% - 90px);
    width: 183px;
    height: 183px;
    z-index: 10;
 
-   background-repeat: no-repeat;
-}
-
-.journal__item--1::before {
-   top: 272px;
-   background-image: url("../img/our-humble-beginnings.png");
-}
-
-.journal__item--2::before {
-   top: 564px;
-   background-image: url("../img/facing-startup-battles.png");
-}
-
-.journal__item--3::before {
-   top: 878px;
-   background-image: url("../img/enter-the-dark-days.png");
-}
-
-.journal__item--4::before {
-   top: 1147px;
-   background-image: url("../img/our-triumph.png");
 }
