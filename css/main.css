@@ -533,6 +533,16 @@ input {
    margin-bottom: 100px;
 }
 
+/*отдельные маргины для более больших или малых блоков текста
+чтобы картинки смотрелись выровнеными*/
+.about-us__journal-item--big {
+   margin-bottom: 80px;
+}
+
+.about-us__journal-item--small {
+   margin-bottom: 120px;
+}
+
 .about-us__text-wrapper {
    box-sizing: border-box;
    width: 325px;
@@ -591,5 +601,16 @@ input {
    width: 183px;
    height: 183px;
    z-index: 10;
+}
 
+.journal__item::after {
+   content: "";
+   position: absolute;
+   top: 181px;
+   left: calc(50% - 2px);
+   width: 4px;
+   height: 130px;
+   z-index: 10;
+
+   background-color: #f5f5f5;
 }

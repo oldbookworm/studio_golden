@@ -47,6 +47,16 @@
       position: static;
    }
 
+   .about-us__journal-item--big,
+   .about-us__journal-item--small {
+      margin-bottom: 100px;
+   }
+
+   .journal__item::after {
+      display: none;
+   }
+
+
 }
 
 @media only screen and (max-width : 1000px) {
