@@ -513,9 +513,6 @@ input {
 .about-us {
    position: relative;
    border-top: 1px solid transparent;
-
-   /*временно*/
-   min-height: 1666px;
 }
 
 /*запись*/
@@ -603,7 +600,7 @@ input {
    z-index: 10;
 }
 
-.journal__item::after {
+.journal__item:not(:last-child)::after {
    content: "";
    position: absolute;
    top: 181px;
@@ -614,3 +611,32 @@ input {
 
    background-color: #f5f5f5;
 }
+
+.journal__lastimg {
+   box-sizing: border-box;
+   margin: 0 auto;
+
+   width: 183px;
+   height: 183px;
+   border: 7px solid #f1f1f1;
+   border-radius: 50%;
+   background-color: #fed136;
+
+}
+
+.journal__lastimg-text {
+   padding: 0;
+   margin: 0;
+   padding-top: 32px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   line-height: 25px;
+   font-weight: 700;
+   color: #ffffff;
+
+   text-align: center;
+   vertical-align: middle;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
