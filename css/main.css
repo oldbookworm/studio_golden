@@ -651,3 +651,90 @@ input {
    min-height: 818px;
 }
 
+.team__list {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.team__item {
+   width: 290px;
+   box-sizing: border-box;
+
+   /*временно*/
+   min-height: 355px;
+   border: 1px solid black;
+}
+
+/*фотографии*/
+.team__portrait {
+   box-sizing: border-box;
+   border: 1px solid #f1f1f1;
+   width: 220px;
+   height: 220px;
+   border-radius: 50%;
+   margin: 0 auto;
+   margin-bottom: 25px;
+
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.team__marketer {
+   background-image: url("../img/marketing.png");
+}
+
+.team__coder {
+   background-image: url("../img/coder.png");
+}
+
+.team__designer {
+   background-image: url("../img/designer.png");
+}
+
+/*текст*/
+.team__name {
+   margin: 0;
+   padding: 0;
+   margin-bottom: 5px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 700;
+   color: #222222;
+
+   text-align: center;
+}
+
+.team__position {
+   margin: 0;
+   padding: 0;
+   margin-bottom: 13px;
+
+   text-align: center;
+}
+
+/*соцсетки*/
+
+.socials {
+   display: flex;
+   justify-content: space-around;
+   width: 150px;
+   margin: 0 auto;
+}
+
+.socials__btn {
+   display: block;
+   box-sizing: border-box;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 2px solid #222222;
+}
+
+
+.socials__btn i {
+   font-size: 20px;
+   color: #222222;
+}
