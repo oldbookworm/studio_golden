@@ -774,3 +774,19 @@ input {
    font-size: 16px;
    text-align: center;
 }
+
+
+/* =================== Секция Clients =================*/
+
+.clients {
+   border-top: 1px solid transparent;
+   border-bottom: 1px solid transparent;
+}
+
+.clients_list {
+   display: flex;
+   justify-content: space-between;
+
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
