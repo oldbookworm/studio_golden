@@ -768,7 +768,7 @@ input {
 
 /*абзац текста*/
 .team-text {
-   width: 651px;
+   width: 100%;
    margin: 0 auto;
    margin-bottom: 118px;
    font-size: 16px;
@@ -789,4 +789,9 @@ input {
 
    margin-top: 60px;
    margin-bottom: 60px;
+}
+
+.clients_item img {
+   display: block;
+   margin: 0 auto;
 }
