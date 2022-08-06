@@ -795,3 +795,26 @@ input {
    display: block;
    margin: 0 auto;
 }
+
+
+/* =================== Секция Contact =================*/
+
+.contact {
+   border-top: 1px solid transparent;
+   border-bottom: 1px solid transparent;
+
+   background-color: #222222;
+   background-image: url(../img/map.png);
+   background-position: right bottom;
+   background-repeat: no-repeat;
+
+   /*временно*/
+   min-height: 677px;
+}
+
+.contact .section-title {
+   color: #ffffff;
+}
+
+/*Форма*/
+
