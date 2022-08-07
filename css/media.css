@@ -56,7 +56,6 @@
       display: none;
    }
 
-
 }
 
 @media only screen and (max-width : 1000px) {
@@ -117,6 +116,16 @@
       font-size: 35px;
       line-height: 45px;
    } 
+
+   /*Форма*/
+   .contact__form-wrapper {
+      width: 100%;
+   }
+
+   .form__btn {
+      margin-top: 0px;
+      margin-bottom:  30px;
+   }
 }
 
 

@@ -892,3 +892,8 @@ input {
    cursor: pointer;
 }
 
+.form__btn {
+      margin-top: 30px;
+}
+
+
