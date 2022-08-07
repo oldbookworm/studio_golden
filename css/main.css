@@ -818,3 +818,77 @@ input {
 
 /*Форма*/
 
+.contact__form {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.contact__form-wrapper {
+   width: 48%;
+}
+
+.contact__form-item {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+
+.contact__form-input {
+   box-sizing: border-box;
+   margin-bottom: 30px;
+   padding-left: 23px;
+
+   width: 100%;
+   height: 50px;
+
+   border-radius: 2px;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 700;
+   color: #777777;
+}
+
+.contact__form-textarea {
+   box-sizing: border-box;
+   padding-top: 20px;
+   padding-left: 23px;
+   margin-bottom: 30px;
+
+   width: 100%;
+   height: 211px;
+
+   border-radius: 2px;
+   resize: none;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 700;
+   color: #777777;
+}
+
+.contact__form-input::placeholder,
+.contact__form-textarea::placeholder {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   font-weight: 700;
+   color: #bbbbbb;
+   text-transform: uppercase;
+}
+
+.contact__form-input:focus,
+.contact__form-textarea:focus {
+   outline: none;
+   border: 4px solid #fed136;
+}
+
+.contact__form-input:hover,
+.contact__form-textarea:hover {
+   cursor: pointer;
+}
+
