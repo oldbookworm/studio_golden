@@ -79,3 +79,6 @@ $(document).ready(function(){
   });
 });
 
+
+
+ScrollReveal().reveal('.rev', slideUp);

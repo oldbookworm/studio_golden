@@ -41,6 +41,10 @@
       margin-bottom: 65px;
    }
 
+   .services__list {
+      margin-bottom: 35px;
+   }
+
    /*секция about us*/
 
    .journal__img {
@@ -273,6 +277,11 @@
    
    .services__item-text {
       margin-bottom: 10px;
+   }
+
+   /*секция портфолио*/
+   .portfolio__list {
+      margin-bottom: 30px;
    }
 }
 
