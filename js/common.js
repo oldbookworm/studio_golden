@@ -80,5 +80,9 @@ $(document).ready(function(){
 });
 
 
+ScrollReveal().reveal('.rev', {
+	delay: 100,
+});
 
-ScrollReveal().reveal('.rev', slideUp);
+
+
